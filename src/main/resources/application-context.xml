@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--让切面类和目标类，用Spring的IOC容器去管理-->
+    <context:component-scan base-package="com.ajiu.test.*"/>
+
+    <!--如果要在Spring的IOC容器中使用AspectJ，进行如下配置-->
+    <!--Spring的IOC 容器会自动为 与AspectJ的切面匹配的bean创建代理对象-->
+    <aop:aspectj-autoproxy/>
+
+
+</beans>
