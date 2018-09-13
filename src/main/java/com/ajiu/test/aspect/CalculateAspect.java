@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  *      // @AfterThrowing： 异常通知，只有在方法抛出异常时才通知
  *      // @Order: 假如同一个切点要织入多个切面程序，则会按order大小顺序，0的优先级最高
  * @author: JiuDongDong
- * date: 2018/9/11.
+ * date: 2018/9/11. 
  */
 @Aspect// 表示这个类是切面程序
 @Component// 让Spring去管理这个切面程序，自动为目标类创建代理
